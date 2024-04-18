@@ -14,11 +14,11 @@ string invertirParte(string texto, int inicio, int final) {
 
 int main() {
     int inicio;
-	int final;
+    int final;
     string texto;
 
     cin >> inicio;
-	cin >> final;
+    cin >> final;
     cin.ignore();
     getline(cin, texto);
 
