@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 class CNumber {
@@ -15,7 +14,6 @@ public:
     int contadorImpares();
     void establecerNumeros(int, int, int);
 };
-
 CNumber::CNumber(int n1, int n2, int n3) {
     num1 = n1;
     num2 = n2;
@@ -24,19 +22,25 @@ CNumber::CNumber(int n1, int n2, int n3) {
 
 int CNumber::obtenerMaximo() {
     int max = num1;
-    if (num2 > max)
-        max = num2;
-    if (num3 > max)
-        max = num3;
+    
+    if (num2 > max){
+    	max = num2;
+	}   
+    if (num3 > max){
+    	max = num3;
+	}
     return max;
 }
 
 int CNumber::obtenerMinimo() {
     int min = num1;
-    if (num2 < min)
-        min = num2;
-    if (num3 < min)
-        min = num3;
+    
+    if (num2 < min){
+    	min = num2;
+	}   
+    if (num3 < min){
+    	min = num3;
+	}
     return min;
 }
 
@@ -46,32 +50,32 @@ double CNumber::obtenerPromedio() {
 
 int CNumber::contadorPares() {
     int contador = 0;
-    if (num1 % 2 == 0)
-        contador++;
-    if (num2 % 2 == 0)
-        contador++;
-    if (num3 % 2 == 0)
-        contador++;
+    
+    if (num1 % 2 == 0){
+    	contador++;
+	}
+    if (num2 % 2 == 0){
+    	contador++;
+	} 
+    if (num3 % 2 == 0){
+    	contador++;
+	}
     return contador;
 }
-
 int CNumber::contadorImpares() {
     int contador = 0;
-    if (num1 % 2 != 0)
-        contador++;
-    if (num2 % 2 != 0)
-        contador++;
-    if (num3 % 2 != 0)
-        contador++;
+    
+    if (num1 % 2 != 0){
+    	ontador++;
+	}
+    if (num2 % 2 != 0){
+    	contador++;
+	}
+    if (num3 % 2 != 0){
+    	contador++;
+	}
     return contador;
 }
-
-void CNumber::establecerNumeros(int n1, int n2, int n3) {
-    num1 = n1;
-    num2 = n2;
-    num3 = n3;
-}
-
 int main() {
     int num1 = 0;
 	int num2 = 0; 
@@ -94,4 +98,3 @@ int main() {
 
     return 0;
 }
-
